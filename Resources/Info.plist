@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSCameraUsageDescription</key>
+    <string>菜搭子需要相机权限来识别食材，帮您找到能做的菜</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>菜搭子需要访问相册来选择食材图片</string>
+    <key>CFBundleDisplayName</key>
+    <string>菜搭子</string>
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>arm64</string>
+        <string>camera</string>
+    </array>
+    <key>UILaunchScreen</key>
+    <dict>
+        <key>UIColorName</key>
+        <string></string>
+    </dict>
+</dict>
+</plist>

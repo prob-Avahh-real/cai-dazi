@@ -1,0 +1,48 @@
+name: 菜搭子
+options:
+  bundleIdPrefix: com.caidaizi
+  deploymentTarget:
+    iOS: "18.0"
+  xcodeVersion: "16.0"
+
+settings:
+  SWIFT_VERSION: "6.0"
+  SWIFT_STRICT_CONCURRENCY: complete
+  DEVELOPMENT_TEAM: ""
+
+targets:
+  菜搭子:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+      - path: Models
+      - path: Services
+      - path: Core
+      - path: Features
+      - path: Resources
+    settings:
+      INFOPLIST_FILE: Resources/Info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: com.caidaizi.app
+      MARKETING_VERSION: "1.0.0"
+      CURRENT_PROJECT_VERSION: "1"
+    info:
+      path: Resources/Info.plist
+      properties:
+        NSCameraUsageDescription: "菜搭子需要相机权限来识别食材，帮您找到能做的菜"
+        NSPhotoLibraryUsageDescription: "菜搭子需要访问相册来选择食材图片"
+        UIBackgroundModes: []
+        UILaunchScreen:
+          UIColorName: ""
+          UIImageName: LaunchIcon
+        UIRequiredDeviceCapabilities:
+          - arm64
+          - camera
+        CFBundleDisplayName: "菜搭子"
+    entitlements:
+      path: Resources/菜搭子.entitlements
+      properties:
+        com.apple.developer.icloud-container-identifiers:
+          - iCloud.com.caidaizi.app
+        com.apple.developer.icloud-services:
+          - CloudKit
